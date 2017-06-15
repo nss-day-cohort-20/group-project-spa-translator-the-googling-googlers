@@ -1,25 +1,14 @@
-console.log('hellllll no')
-
 var translationObject = (function(oldObject) {
 	var russian = {
 		happyholidays : "Счастливых праздников",
 		seasonsGreetings : "Приветствия сезона"
-		// acquaintance: "знакомство",
-		// pet:"домашнее",
-		// familyMember:"Член семьи",
-		// soberMessage:"Надеюсь, вы не трезвы",
-		// choicesMessage: "Сделайте хороший выбор",
-		// okMessage: "Ты в порядке",
-		// cordially: "сердечно",
-		// love: "люблю",
-		// regards: "С уважением"
-
 	};
 	oldObject.translateToRussian = function(enteredText) {
-
+		if (enteredText.includes("Happy Holidays")) {
+			enteredText.replace("Happy Holidays", russian.happyHolidays)
+		} else if (enteredText.includes("Seasons Greetings")) {
+			enteredText.replace("Seasons Greetings", russian.seasonsGreetings)
+		}
+	}
 	return oldObject;
-
-}(translationObject));
-
-
-console.log(translationObject);
+}(translationObject))
