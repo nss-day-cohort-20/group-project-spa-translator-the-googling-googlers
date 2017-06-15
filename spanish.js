@@ -1,18 +1,17 @@
 var translationObject = (function(oldObject) {
-	let spanish = {
+	var spanish = {
 		happyHolidays : "Felices vacaciones",
 		seasonsGreetings : "Saludos de las estaciones"
-		// acquaintance: "Conocido",
-		// pet: "Mascota",
-		// familyMember: "Miembro de la familia",
-		// soberMessage: "Espero que no estés sobrio",
-		// choicesMessage: "Toma buenas decisiones",
-		// okMessage: "Estás bien",
-		// cordially: "cordialmente",
-		// love: "amor",
-		// regards: "saludos"
 	};
 	oldObject.translateToSpanish = function(enteredText) {
-
+		console.log(enteredText);
+		console.log(textInputArea.value);
+		console.log(spanish.happyHolidays);
+		if (enteredText.includes("Happy Holidays")) {
+			cardOutput.innerHTML = spanish.happyHolidays;
+		} else if (enteredText.includes("Seasons Greetings")) {
+			cardOutput.innerHTML = spanish.seasonsGreetings;
+		}
+	};
 	return oldObject;
 }(translationObject))
