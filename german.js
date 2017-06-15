@@ -7,6 +7,7 @@ var translationObject = (function(oldObject) {
 		console.log(enteredText);
 		console.log(textInputArea.value);
 		console.log(german.happyHolidays);
+		console.log(german.seasonsGreetings);
 		if (enteredText.includes("Happy Holidays")) {
 			cardOutput.innerHTML = german.happyHolidays;
 		} else if (enteredText.includes("Seasons Greetings")) {

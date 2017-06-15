@@ -13,7 +13,7 @@ happyHolidays.addEventListener("click", function() {
 
 seasonsGreetings.addEventListener("click", function() {
 	seasonsGreetings = seasonsGreetings.value;
-	textInputArea.innerHTML = "Season Greetings";
+	textInputArea.innerHTML = "Seasons Greetings";
 });
 
 var spanishBtn = document.getElementById("submitSpanishBtn");
