@@ -8,16 +8,24 @@ var translationObject = (function(English) {
 		
 		familyMember:"Член семьи",
 
+		pet: "домашнее",
+
+		familyMember: "Член семьи",
+
 		soberMessage:"Надеюсь, вы не трезвы",
 
 		choicesMessage:"Сделайте хороший выбор",
 		
 		okMessage:"Ты в порядке",
 
+		choicesMessage: "Сделайте хороший выбор",
+
+		okMessage: "Ты в порядке",
+
 		cordially: "сердечно",
-		
+
 		love: "люблю",
-		
+
 		regards: "С уважением"
 
 	};
