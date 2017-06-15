@@ -30,5 +30,3 @@ var russianBtn = document.getElementById("submitRussianBtn");
 russianBtn.addEventListener("click", function() {
 	translationObject.translateToRussian(textInputArea.value)
 });
-
-
