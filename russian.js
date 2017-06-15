@@ -10,14 +10,14 @@ var translationObject = (function(English) {
 
 		soberMessage:"Надеюсь, вы не трезвы",
 
-		choicesMessage:"Сделайте хороший выбор",
-		
-		okMessage:"Ты в порядке",
+		choicesMessage: "Сделайте хороший выбор",
+
+		okMessage: "Ты в порядке",
 
 		cordially: "сердечно",
-		
+
 		love: "люблю",
-		
+
 		regards: "С уважением"
 
 	};
