@@ -1,15 +1,14 @@
 console.log('hellllll no')
 
-var toRussian = (function(English){
-	let Russian {
-
+var translationObject = (function(English) {
+	var Russian = {}
 		acquaintance: "знакомство",
+		
+		pet:"домашнее",
+		
+		familyMember:"Член семьи",
 
-		pet: "домашнее",
-
-		familyMember: "Член семьи",
-
-		soberMessage: "Надеюсь, вы не трезвы",
+		soberMessage:"Надеюсь, вы не трезвы",
 
 		choicesMessage: "Сделайте хороший выбор",
 
@@ -24,10 +23,23 @@ var toRussian = (function(English){
 	};
 	return Russian
 
-})
+}(translationObject));
 
 
-console.log(toRussian);
+console.log(translationObject);
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

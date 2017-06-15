@@ -19,3 +19,7 @@ var English = {
 		regards: "regards",
 
 	};
+
+	document.getElementById("input-field").split()
+
+
