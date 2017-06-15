@@ -12,6 +12,11 @@ h1 {
 section#card-generator {
 	margin: 1em auto 1em auto;
 	font-size: 5em;
+	border: 2px dotted #228b22;
+	height: 3em;
+	width: 75%;
+	color: #800000;
+	font-family: 'Playball', cursive;
 }
 textarea {
 	display: block;
