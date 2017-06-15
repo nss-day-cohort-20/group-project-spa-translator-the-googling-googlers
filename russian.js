@@ -13,6 +13,7 @@ var translationObject = (function(oldObject) {
 		// cordially: "сердечно",
 		// love: "люблю",
 		// regards: "С уважением"
+
 	};
 	oldObject.translateToRussian = function(enteredText) {
 
@@ -22,23 +23,3 @@ var translationObject = (function(oldObject) {
 
 
 console.log(translationObject);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
