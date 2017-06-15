@@ -18,3 +18,9 @@ submitAcquaintanceBtn.addEventListener("click", function() {
 
 
 
+var message = document.getElementById("");
+var submitHappyHolidaysBtn = documentgetElementById("submitHappyHolidaysBtn");
+
+submitHappyHolidaysBtn.addEventListner("click", function() {
+	textInputArea.innerHTML = "Happy Holidays";
+})
