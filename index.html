@@ -7,15 +7,53 @@
 	</head>
 	<body>
 		<div id="card-wrapper" class="card-maker-wrapper">
-			<h1 class="title">Holiday Card Translator</h1>
-			<div class="question-output">
+			<h1 class="title">Holiday Card Maker</h1>
+			<section id="yournamepage" class="page">
+				<h3>What's your name?</h3>
+				<input type="text" name="yourName" id="yourName">
+				<button id="submitYourName">Submit</button>
+			</section>
+			<section id="to-whom-choice-page" class="page">
+				<h3>Who would you like to send a card to?</h3>
+				<button id="submitAcquaintanceBtn">Acquaintance</button>
+				<button id="submitPetBtn">Pet</button>
+				<button id="submitFamilyMemberBtn">Family Member</button>
+				<input type="text" name="theirName" >
+				<button id="submitTheirNameBtn">Submit</button>
+			</section>
+			<section id="message-choice-page" class="page">
+				<h3>What message would you like to add?</h3>
+				<button id="soberMessageBtn">I hope you are not sober!</button>
+				<button id="choicesMessageBtn">Make good choices!</button>
+				<button id="okMessageBtn">You are ok!</button>
+			</section>
+			<section id="signoff-choice-page" class="page">
+				<h3>What signoff would you like to use?</h3>
+				<button id="submitCordiallyBtn">Cordially</button>
+				<button id="submitLoveBtn">Love</button>
+				<button id="submitRegardsBtn">Regards</button>
+			</section>
+			<section id="language-choice-page" class="page">
+				<h3>What language would you like to translate to?</h3>
+				<button id="submitSpanishBtn">Spanish</button>
+				<button id="submitGermanBtn">German</button>
+				<button id="submitRussianBtn">Russian</button>
+			</section>
+			<section id="card-choice-page" class="page">
+				<h3>Here is your card:</h3>
+				<div id="card-area">
+				</div>
+			</section>
+			<section id="card-generator" class="page">
+				<div class="question-output">
 
-			</div>
-			<textarea id="input-field" class="textarea"></textarea>
+				</div>
+				<textarea id="input-field" class="textarea"></textarea>
 
 
 
-			<button id="submitBtn" class="submit">SUBMIT</button>
+				<button id="cardSubmitBtn" class="submit">SUBMIT</button>
+			</section>
 		</div>
 
 		<script src="main.js"></script>
