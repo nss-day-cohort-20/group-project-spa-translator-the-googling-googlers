@@ -22,7 +22,7 @@ spanishBtn.addEventListener("click", translationObject(oldObject));
 var germanBtn = document.getElementById("submitGermanBtn");
 germanBtn.addEventListener("click", translationObject(oldTranslate));
 
-var russianRtn = document.getElementById("submitRussianBtn");
+var russianBtn = document.getElementById("submitRussianBtn");
 russianBtn.addEventListener("click", translationObject(English));
 
 
