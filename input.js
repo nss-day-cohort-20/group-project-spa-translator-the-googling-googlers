@@ -1,26 +1,28 @@
-var yourName = document.getElementById("yourName");
-var yourNameSubmit = document.getElementById("submitYourName");
+var happyHolidays = document.getElementById("happy-holidays");
+var seasonsGreetings = document.getElementById("seasons-greetings");
 
-var textInputArea = document.getElementById("input-field");
+var textInputArea = document.getElementById("input-text");
 
-
-yourNameSubmit.addEventListener("click", function() {
-	yourName = yourName.value;
-	textInputArea.innerHTML = `${yourName}` + " ";
-})
-
-var toWhomBtns = document.getElementById("toWhomBtns");
-var submitAcquaintanceBtn = document.getElementById("submitAcquaintanceBtn");
-
-submitAcquaintanceBtn.addEventListener("click", function() {
-	textInputArea.innerHTML += "Acquaintance";
-})
+var cardOutput = document.getElementById("card-generator");
 
 
-
-var message = document.getElementById("");
-var submitHappyHolidaysBtn = documentgetElementById("submitHappyHolidaysBtn");
-
-submitHappyHolidaysBtn.addEventListner("click", function() {
+happyHolidays.addEventListener("click", function() {
+	happyHolidays = happyHolidays.value;
 	textInputArea.innerHTML = "Happy Holidays";
-})
+});
+
+seasonsGreetings.addEventListener("click", function() {
+	seasonsGreetings = seasonsGreetings.value;
+	textInputArea.innerHTML = "Season Greetings";
+});
+
+var spanishBtn = document.getElementById("submitSpanishBtn");
+spanishBtn.addEventListener("click", translationObject(oldObject));
+
+var germanBtn = document.getElementById("submitGermanBtn");
+germanBtn.addEventListener("click", translationObject(oldTranslate));
+
+var russianRtn = document.getElementById("submitRussianBtn");
+russianBtn.addEventListener("click", translationObject(English));
+
+
