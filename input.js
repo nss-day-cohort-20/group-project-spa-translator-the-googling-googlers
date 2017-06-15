@@ -17,14 +17,18 @@ seasonsGreetings.addEventListener("click", function() {
 });
 
 var spanishBtn = document.getElementById("submitSpanishBtn");
-spanishBtn.addEventListener("click", translationObject.translateToSpanish(textInputArea.value));
+spanishBtn.addEventListener("click", function() {
+	translationObject.translateToSpanish(textInputArea.value)
+});
 
 var germanBtn = document.getElementById("submitGermanBtn");
 germanBtn.addEventListener("click", function() {
-translationObject.translateToGerman(textInputArea.value)
+	translationObject.translateToGerman(textInputArea.value)
 });
 
 var russianBtn = document.getElementById("submitRussianBtn");
-russianBtn.addEventListener("click", translationObject.translateToRussian(textInputArea.value));
+russianBtn.addEventListener("click", function() {
+	translationObject.translateToRussian(textInputArea.value)
+});
 
 

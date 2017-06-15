@@ -4,11 +4,14 @@ var translationObject = (function(oldObject) {
 		seasonsGreetings : "Saludos de las estaciones"
 	};
 	oldObject.translateToSpanish = function(enteredText) {
+		console.log(enteredText);
+		console.log(textInputArea.value);
+		console.log(spanish.happyHolidays);
 		if (enteredText.includes("Happy Holidays")) {
-			enteredText.replace("Happy Holidays", spanish.happyHolidays)
+			cardOutput.innerHTML = spanish.happyHolidays;
 		} else if (enteredText.includes("Seasons Greetings")) {
-			enteredText.replace("Seasons Greetings", spanish.seasonsGreetings)
+			cardOutput.innerHTML = spanish.seasonsGreetings;
 		}
-	}
+	};
 	return oldObject;
 }(translationObject))
