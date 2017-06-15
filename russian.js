@@ -1,57 +1,25 @@
 console.log('hellllll no')
 
-var translationObject = (function(English) {
-	var Russian = {}
-		acquaintance: "знакомство",
-		
-		pet:"домашнее",
-		
-		familyMember:"Член семьи",
-
-		pet: "домашнее",
-
-		familyMember: "Член семьи",
-
-		soberMessage:"Надеюсь, вы не трезвы",
-
-		choicesMessage:"Сделайте хороший выбор",
-		
-		okMessage:"Ты в порядке",
-
-		choicesMessage: "Сделайте хороший выбор",
-
-		okMessage: "Ты в порядке",
-
-		cordially: "сердечно",
-
-		love: "люблю",
-
-		regards: "С уважением"
+var translationObject = (function(oldObject) {
+	var russian = {
+		happyholidays : "Счастливых праздников",
+		seasonsGreetings : "Приветствия сезона"
+		// acquaintance: "знакомство",
+		// pet:"домашнее",
+		// familyMember:"Член семьи",
+		// soberMessage:"Надеюсь, вы не трезвы",
+		// choicesMessage: "Сделайте хороший выбор",
+		// okMessage: "Ты в порядке",
+		// cordially: "сердечно",
+		// love: "люблю",
+		// regards: "С уважением"
 
 	};
-	return Russian
+	oldObject.translateToRussian = function(enteredText) {
+
+	return oldObject;
 
 }(translationObject));
 
 
 console.log(translationObject);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

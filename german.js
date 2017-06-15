@@ -1,20 +1,14 @@
-var translationObject = (function(oldTranslate) {
-	let germanLanguage = {
-		acquaintance: "Bekanntschaft",
-		pet: "Haustier",
-		familyMember: "Familienmitglied",
-		happy: "glücklich",
-		soberMessage: "Ich hoffe du bist nicht nüchtern!",
-		choicesMessage: "Gute entscheidungen treffen!",
-		okMessage: "Du bist in ordnung!",
-		cordially: "Herzlich,",
-		love: "Liebe,",
-		regards: "Grüße,"
+var translationObject = (function(oldObject) {
+	let german = {
+		happyHolidays : "Schöne Ferien",
+		seasonsGreetings : "Die Grüße der Jahreszeit"
+	};
+	oldObject.translateToGerman = function(enteredText) {
+		if (enteredText.contains("Happy Holidays")) {
+			enteredText.replace("Happy Holidays", german.happyHolidays)
+		} else if (enteredText.contains("Seasons Greetings")) {
+			enteredText.replace("Seasons Greetings", german.seasonsGreetings)
+		}
 	}
-	oldTranslate.translateToGerman = function() {
-
-	}
-
-	return oldTranslate;
-
+	return oldObject;
 }(translationObject));
